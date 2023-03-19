@@ -1,0 +1,169 @@
+@import 'reset';
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 1440px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  border: 1px solid #ccc;
+  margin: 40px auto;
+  padding: 20px;
+  &--login {
+    max-width: 450px;
+  }
+}
+
+a {
+  color: black;
+  display: contents;
+  text-decoration: none;
+  &:active {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+.link-row {
+  display: flex;
+  min-width: 400px;
+  max-width: 1000px;
+  justify-content: center;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 0 auto;
+  .row__cell {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-width: 250px;
+    &:first-child,
+    &:nth-child(3) {
+      justify-content: center;
+    }
+  }
+}
+
+.item-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  min-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  .item-row {
+    font-size: 16px;
+    padding: 10px;
+    &--actors {
+      display: flex;
+      gap: 5px;
+    }
+    &--high {
+      margin-top: 20px;
+    }
+  }
+}
+.actor {
+  background: #aff3da;
+  padding: 5px;
+  border-radius: 5px;
+  word-break: break-all;
+}
+
+.button {
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  &--update {
+    background-color: #339f74;
+    &:hover {
+      background-color: #37b180;
+    }
+  }
+  &--delete {
+    background-color: #df5232;
+    &:hover {
+      background-color: #f47558;
+    }
+  }
+  &--delete {
+    background-color: #df5232;
+    &:hover {
+      background-color: #f47558;
+    }
+  }
+  &--redirect {
+    color: black;
+    background-color: #f7f1ef;
+    &:hover {
+      background-color: #cfcfcf;
+    }
+  }
+}
+
+input.item-row {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.field {
+  margin-top: 10px;
+}
+
+.actors-wrapper {
+  display: flex;
+  max-width: 330px;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+input.item-row--high {
+  height: 40px;
+  max-width: 400px;
+}
+
+.label {
+  display: block;
+  margin-top: 20px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 435px;
+}
+
+.select {
+  width: 50px;
+  height: 40px;
+}
